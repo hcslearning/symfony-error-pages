@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenido!{% endblock %}
+
+{% block body %}
+
+    Proyecto que muestra cómo customizar las páginas de Error en Symfony 4.
+    
+    <ul>
+        <li>
+            <!-- 40x -->
+            <a href="/pagina-no-existente">Página NO Existente (40x)</a>
+        </li>
+        <li>
+            <!-- 50x -->
+            <a href="{{ path('error') }}">Página con Error (50x)</a>
+        </li>
+    </ul>
+    
+    
+{% endblock %}
